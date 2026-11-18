@@ -1,4 +1,4 @@
-#include "project_data.h"
+#include "cpp_header.h"
 
 // Local function prototypes for menu navigation
 static void clear_input_buffer(void);
@@ -101,12 +101,12 @@ static void menu_module1(void) {
                 break;
             case 4:
                 printf("\nEnter Tail Number to update: ");
-                scanf("%s", tail_buffer);
+                scanf("%s", tail_number);
                 update_aircraft(tail_number);
                 break;
             case 5:
                 printf("\nEnter Tail Number to remove: ");
-                scanf("%s", tail_buffer);
+                scanf("%s", tail_number);
                 remove_aircraft(tail_number);
                 break;
             case 6:
@@ -149,7 +149,7 @@ static void menu_module2(void) {
                 printf("\nEnter Aircraft Tail Number: ");
                 scanf("%s", tail_number);
                 printf("Enter Flight Duration (hours): ");
-                while (scanf("%f", &fhours) != 1 || fhours <= 0) {
+                while (scanf("%f", &hours_buffer) != 1 || hours_buffer <= 0) {
                     printf("Invalid input. Enter positive flight duration: ");
                     clear_input_buffer();
                 }

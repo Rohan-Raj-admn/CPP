@@ -2,15 +2,15 @@
 #define cpp_header
 
 #include <stdio.h>
-#include <stdib.h>  //memory allocation utility.
+#include <stdlib.h>  //memory allocation utility.
 #include <string.h>
 #include <time.h>   //for time
 #include <ctype.h>  //to manipulate uprcase and lwrcase.
 #include <math.h>
 
-#include Fleet_file "fleet.dat"
-#include Mentos_file "mentos.dat"
-#include Audit_file "awrth_audit.txt"
+#define Fleet_file "fleet.dat"
+#define Mentos_file "mentos.dat"
+#define Audit_file "awrth_audit.txt"
 
 // To flush data into the database. for fleet.dat
 typedef struct {
