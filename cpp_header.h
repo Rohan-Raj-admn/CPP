@@ -44,7 +44,7 @@ void update_aircraft(const char *tail_number);
 void remove_aircraft(const char *tail_number);
 
 //module 2
-void log_flight(cont char *tail_num, double *fhours);
+void log_flight(const char *tail_num, double *fhours);
 void clcult_struct_ft(Aircraft *ac);
 void chk_inspt_intervals(void);
 void reset_mentos_counters(const char *tail_num);
@@ -62,6 +62,6 @@ void chk_fleet_awrth(void);
 void gnrt_grnded_aircraft_report(void);
 void export_compliance_audit_file(void);
 void print_fleet_summary(void);
-void look_audit_history(cont char *tail_number);
+void look_audit_history(const char *tail_number);
 
 #endif
